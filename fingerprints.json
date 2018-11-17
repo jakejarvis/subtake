@@ -1,0 +1,224 @@
+[
+	{
+		"service": "azure",
+		"cname": [
+			".azurewebsites.net",
+			".cloudapp.net",
+			".cloudapp.azure.com",
+			".trafficmanager.net",
+			".blob.core.windows.net",
+			".azure-api.net",
+			".azurehdinsight.net",
+			".azureedge.net"
+		],
+		"fingerprint": [],
+		"nxdomain": true
+	},
+	{
+		"service": "github",
+		"cname": [
+			"github.io",
+			"github.com"
+		],
+		"fingerprint": [
+			"There isn't a GitHub Pages site here."
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "s3 bucket",
+		"cname": [
+			"s3-bucket"
+		],
+		"fingerprint": [
+			"The specified bucket does not exist"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "fastly",
+		"cname": [
+			"fastly"
+		],
+		"fingerprint": [
+			"Fastly error: unknown domain"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "heroku",
+		"cname": [
+			"herokuapp"
+		],
+		"fingerprint": [
+			"herokucdn.com/error-pages/no-such-app.html"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "pantheon",
+		"cname": [
+			"pantheonsite.io"
+		],
+		"fingerprint": [
+			"The gods are wise, but do not know of the site which you seek."
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "tumblr",
+		"cname": [
+			"domains.tumblr.com"
+		],
+		"fingerprint": [
+			"Whatever you were looking for doesn't currently exist at this address."
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "wordpress",
+		"cname": [
+			"wordpress.com"
+		],
+		"fingerprint": [
+			"Do you want to register"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "ghost",
+		"cname": [
+			"ghost.io"
+		],
+		"fingerprint": [
+			"The thing you were looking for is no longer here, or never was"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "shopify",
+		"cname": [
+			"myshopify.com"
+		],
+		"fingerprint": [
+			"Sorry, this shop is currently unavailable."
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "statuspage",
+		"cname": [
+			"statuspage.io"
+		],
+		"fingerprint": [
+			"You are being <a href=\"https://www.statuspage.io\">redirected"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "uservoice",
+		"cname": [
+			"uservoice.com"
+		],
+		"fingerprint": [
+			"This UserVoice subdomain is currently available!"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "surge",
+		"cname": [
+			"surge.sh"
+		],
+		"fingerprint": [
+			"project not found"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "bitbucket",
+		"cname": [
+			"bitbucket.io"
+		],
+		"fingerprint": [
+			"Repository not found"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "brightcove",
+		"cname": [
+			"bcvp0rtal.com",
+			"brightcovegallery.com",
+			"gallery.video"
+		],
+		"fingerprint": [
+			"<p class=\"bc-gallery-error-code\">Error Code: 404</p>"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "bigcartel",
+		"cname": [
+			"bigcartel.com"
+		],
+		"fingerprint": [
+			"<h1>Oops! We could&#8217;t find that page.</h1>"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "acquia",
+		"cname": [
+			"acquia-test.co"
+		],
+		"fingerprint": [
+			"The site you are looking for could not be found."
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "zendesk",
+		"cname": [
+			"zendesk.com"
+		],
+		"fingerprint": [
+			"Help Center Closed"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "readme",
+		"cname": [
+			"readme.io"
+		],
+		"fingerprint": [
+			"Project doesnt exist... yet!"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "maxcdn",
+		"cname": [
+			".netdna-cdn.com"
+		],
+		"fingerprint": [],
+		"nxdomain": true
+	},
+	{
+		"service": "apigee",
+		"cname": [
+			"-portal.apigee.net"
+		],
+		"fingerprint": [],
+		"nxdomain": true
+	},
+	{
+		"service": "smugmug",
+		"cname": [
+			"domains.smugmug.com"
+		],
+		"fingerprint": [],
+		"nxdomain": true
+	}
+]
