@@ -1,6 +1,6 @@
 [
 	{
-		"service": "azure",
+		"service": "Azure",
 		"cname": [
 			".azurewebsites.net",
 			".cloudapp.net",
@@ -15,7 +15,7 @@
 		"nxdomain": true
 	},
 	{
-		"service": "github",
+		"service": "GitHub",
 		"cname": [
 			"github.io",
 			"github.com"
@@ -26,9 +26,9 @@
 		"nxdomain": false
 	},
 	{
-		"service": "s3 bucket",
+		"service": "S3 Bucket",
 		"cname": [
-			"s3-bucket"
+			"s3-website"
 		],
 		"fingerprint": [
 			"The specified bucket does not exist"
@@ -36,9 +36,9 @@
 		"nxdomain": false
 	},
 	{
-		"service": "fastly",
+		"service": "Fastly",
 		"cname": [
-			"fastly"
+			"fastly.net"
 		],
 		"fingerprint": [
 			"Fastly error: unknown domain"
@@ -46,9 +46,9 @@
 		"nxdomain": false
 	},
 	{
-		"service": "heroku",
+		"service": "Heroku",
 		"cname": [
-			"herokuapp"
+			"herokuapp.com"
 		],
 		"fingerprint": [
 			"herokucdn.com/error-pages/no-such-app.html"
@@ -56,7 +56,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "pantheon",
+		"service": "Pantheon",
 		"cname": [
 			"pantheonsite.io"
 		],
@@ -66,7 +66,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "tumblr",
+		"service": "Tumblr",
 		"cname": [
 			"domains.tumblr.com"
 		],
@@ -76,7 +76,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "wordpress",
+		"service": "WordPress",
 		"cname": [
 			"wordpress.com"
 		],
@@ -86,7 +86,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "ghost",
+		"service": "Ghost",
 		"cname": [
 			"ghost.io"
 		],
@@ -96,7 +96,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "shopify",
+		"service": "Shopify",
 		"cname": [
 			"myshopify.com"
 		],
@@ -106,7 +106,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "statuspage",
+		"service": "Statuspage",
 		"cname": [
 			"statuspage.io"
 		],
@@ -116,7 +116,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "uservoice",
+		"service": "UserVoice",
 		"cname": [
 			"uservoice.com"
 		],
@@ -126,7 +126,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "surge",
+		"service": "Surge",
 		"cname": [
 			"surge.sh"
 		],
@@ -136,7 +136,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "bitbucket",
+		"service": "Bitbucket",
 		"cname": [
 			"bitbucket.io"
 		],
@@ -146,7 +146,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "brightcove",
+		"service": "Brightcove",
 		"cname": [
 			"bcvp0rtal.com",
 			"brightcovegallery.com",
@@ -158,7 +158,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "bigcartel",
+		"service": "BigCartel",
 		"cname": [
 			"bigcartel.com"
 		],
@@ -168,7 +168,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "acquia",
+		"service": "Acquia",
 		"cname": [
 			"acquia-test.co"
 		],
@@ -178,7 +178,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "zendesk",
+		"service": "Zendesk",
 		"cname": [
 			"zendesk.com"
 		],
@@ -188,7 +188,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "readme",
+		"service": "ReadMe",
 		"cname": [
 			"readme.io"
 		],
@@ -198,7 +198,7 @@
 		"nxdomain": false
 	},
 	{
-		"service": "maxcdn",
+		"service": "MaxCDN",
 		"cname": [
 			".netdna-cdn.com"
 		],
@@ -206,7 +206,7 @@
 		"nxdomain": true
 	},
 	{
-		"service": "apigee",
+		"service": "Apigee",
 		"cname": [
 			"-portal.apigee.net"
 		],
@@ -214,7 +214,7 @@
 		"nxdomain": true
 	},
 	{
-		"service": "smugmug",
+		"service": "Smugmug",
 		"cname": [
 			"domains.smugmug.com"
 		],
