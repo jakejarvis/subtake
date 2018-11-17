@@ -70,3 +70,4 @@ Requires [Go](https://golang.org/dl/).
 
 - Integrate `sonar.sh` into the main Go script as an option instead of input file.
 - All-in-one Docker image to automatically download the latest FDNS Project Sonar file and check for takeover possibilities. 
+- Have `sonar.sh` pull domains to check for from `fingerprints.json`, instead of hard-coding them.
