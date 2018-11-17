@@ -38,6 +38,32 @@ Requires [Go](https://golang.org/dl/).
 - A great explanation of the risks of takeovers and steps to responsibly disclose takeovers to companies: https://0xpatrik.com/subdomain-takeover/
 - A comprehensive list of what services are vulnerable and how to proceed once finding them: https://github.com/EdOverflow/can-i-take-over-xyz
 
+## Services Checked
+
+- Amazon S3
+- ~~Amazon CloudFront~~ [(no longer vulnerable?)](https://github.com/EdOverflow/can-i-take-over-xyz/issues/29)
+- Microsoft Azure
+- Heroku
+- GitHub Pages
+- Fastly
+- Pantheon.io
+- Shopify
+- Tumblr
+- WordPress.com
+- Ghost
+- Surge
+- Statuspage
+- Bitbucket Pages
+- UserVoice
+- Zendesk
+- Brightcove
+- Big Cartel
+- Acquia
+- ReadMe.io
+- MaxCDN
+- Apigee
+- Smugmug
+
 ## To-Do
 
 - Integrate `sonar.sh` into the main Go script as an option instead of input file.
