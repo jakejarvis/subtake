@@ -1,5 +1,7 @@
 # subtake
 
+[![Build Status](https://travis-ci.org/jakejarvis/subtake.svg?branch=master)](https://travis-ci.org/jakejarvis/subtake)
+
 Based on [@haccer](https://github.com/haccer)'s [subjack](https://github.com/haccer/subjack) script for subdomain takeover recon.
 
 ## Installation
@@ -31,7 +33,7 @@ Requires [Go](https://golang.org/dl/).
 
 `./sonar.sh 2018-10-27-1540655191-fdns_cname.json.gz sonar_all_cnames.txt`
 
-`./subtake -f sonar_all_cnames.txt -t 50 -ssl -a -o vulnerable.txt`
+`subtake -f sonar_all_cnames.txt -t 50 -ssl -a -o vulnerable.txt`
 
 ## Subdomain Takeovers
 
