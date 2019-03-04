@@ -29,16 +29,26 @@ Requires [Go](https://golang.org/dl/).
 
 `fingerprints.json` can be modified to add or remove hosted platforms to probe for. Many obscure platforms are included, and removing fingerprints for services that are uninteresting to you can speed up the scan.
 
+If you plan on using a high number of threads to speed the process up, you may need to [temporarily raise the `ulimit` of your shell](http://posidev.com/blog/2009/06/04/set-ulimit-parameters-on-ubuntu/):
+
+```
+ulimit -a          # show current limit (usually 1024)
+ulimit -n 10000    # set waaaaay higher
+ulimit -a          # check new limit
+```
+
+After generating a list of all vulnerable subdomains, you can use my [collection of domains invoked in bug bounty programs](https://github.com/jakejarvis/bounty-domains/blob/master/domains.txt) to narrow down valuable targets and possibly get some ca$h monie$$$.
+
 ### Examples
 
 `./sonar.sh 2018-10-27-1540655191-fdns_cname.json.gz sonar_all_cnames.txt`
 
 `subtake -f sonar_all_cnames.txt -t 50 -ssl -a -o vulnerable.txt`
 
-## Subdomain Takeovers
+## Subdomain Takeover Tips
 
 - A great explanation of the risks of takeovers and steps to responsibly disclose takeovers to companies: https://0xpatrik.com/subdomain-takeover/
-- A comprehensive list of what services are vulnerable and how to proceed once finding them: https://github.com/EdOverflow/can-i-take-over-xyz
+- A comprehensive list of what services are vulnerable (and the basis of `fingerprints.json`), and how to proceed once finding them: https://github.com/EdOverflow/can-i-take-over-xyz
 
 ## Services Checked
 

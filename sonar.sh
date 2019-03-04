@@ -2,7 +2,7 @@
 # Usage : ./sonar.sh <version number> <file>
 # Example: ./sonar.sh 2018-10-27-1540655191-fdns_cname.json.gz cname_list.txt
 
-# Premium
+# Progress spinner
 function ech() {
   spinner=( "|" "/" "-" "\\" )
   while true; do
@@ -41,19 +41,18 @@ function run() {
 
 # Gathering data from scans.io / Rapid7 Project Sonar
 # Find the latest filename listed at https://opendata.rapid7.com/sonar.fdns_v2/ ending with fdns_cname.json.gz and pass in as first argument
-#file=$(echo "2018-10-27-1540655191-fdns_cname.json.gz")
-#latest=$(curl -s "https://opendata.rapid7.com/sonar.fdns_v2/" | grep "<td><a" | tail -1 | cut -d'"' -f2)
-#file=$(echo $latest | cut -d'/' -f3)
-#cmd="wget -q https://opendata.rapid7.com$latest"
-#run "Downloading $file (This may take a while)." "$cmd" "Finished Downloading $file"
-cmd="wget -q https://opendata.rapid7.com/sonar.fdns_v2/$1"
-run "Downloading $1, this may take a while..." "$cmd" "Finished downloading $1."
+# Example: 2018-10-27-1540655191-fdns_cname.json.gz
+
+if [ ! -f $1 ]; then
+  cmd="wget -q https://opendata.rapid7.com/sonar.fdns_v2/$1"
+  run "Downloading $1, this may take a while..." "$cmd" "Finished downloading $1."
+fi
 
 # Parsing it into a file called cname_scanio
 msg="Grepping for CNAME records."
 ech $msg &
 pid=$!
-zcat < $file | grep 'type":"cname' | awk -F'":"' '{print $3, $5}' | \
+zcat < $1 | grep 'type":"cname' | awk -F'":"' '{print $3, $5}' | \
   awk -F'"' '{print $1, $3}' | sed -e s/" type "/" "/g >> cname_scanio
 die $pid "CNAME records grepped." $msg
 
@@ -122,7 +121,7 @@ cmd="grep -Ei '${DOMAINS}' cname_scanio >> cname_db"
 run "Sorting CNAME records." "$cmd" "CNAME records sorted."
 
 # Sorting the CNAME list
-cmd="cat cname_db | cut -d' ' -f1 | sort | uniq >> $1"
+cmd="cat cname_db | cut -d' ' -f1 | sort | uniq >> $2"
 run "Cleaning up." "$cmd" "Cleaned up."
 
 # RM files.
