@@ -48,7 +48,8 @@
 	{
 		"service": "Heroku",
 		"cname": [
-			"herokuapp.com"
+			"herokuapp.com",
+			"herokudns.com"
 		],
 		"fingerprint": [
 			"herokucdn.com/error-pages/no-such-app.html"
