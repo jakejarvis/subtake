@@ -11,8 +11,8 @@ time_start=$(date -u +%s)
 tempdir=/tmp/sonar
 
 # Make sure there aren't existing temp files
+rm -rf ${tempdir:?}
 mkdir -p $tempdir
-rm -rf ${tempdir:?}/*
 
 
 # Download dataset from Rapid7 if not already provided
