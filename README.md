@@ -41,7 +41,7 @@ After generating a list of all vulnerable subdomains, you can use my [collection
 
 ### Examples
 
-`./sonar.sh 2018-10-27-1540655191-fdns_cname.json.gz sonar_all_cnames.txt`
+`./sonar.sh 2018-10-27-1540655191 sonar_all_cnames.txt`
 
 `subtake -f sonar_all_cnames.txt -t 50 -ssl -a -o vulnerable.txt`
 
